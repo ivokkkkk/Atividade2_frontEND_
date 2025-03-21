@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Usuário</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo personalizado para a linha no final da página */
+        .linha-final {
+            border-width: 2px;
+            border-color: #003cff; 
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Meu Perfil</h1>
+    </header>
+
+    <!-- Container principal -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Coluna da foto de perfil e informações do usuário -->
+            <div class="col-md-4 text-center">
+                <img style="padding: 60px;" src="imagens/foto.png" alt="Foto de Perfil" class="img-fluid rounded-circle mb-3">
+                <h2>Pedro Ivo</h2>
+                <p>Email: Pedroivo9141@outlook.com</p>
+                <p>Localização: Maringá - PR - Brasil</p>
+            </div>
+
+            <!-- Atividades Recentes -->
+            <div class="col-md-8">
+                <h2>Atividades Recentes</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Atividade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>19/03/2025</td>
+                            <td>Primeira Magica</td>
+                            <td>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>17/03/2025</td>
+                            <td>Primeiro Portfolio</td>
+                            <td>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>21/03/2025</td>
+                            <td>Pagina Responsiva</td>
+                            <td>Em andamento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Formulário de contato -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Formulário de Contato</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Linha no final da página -->
+    <hr class="linha-final">
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
